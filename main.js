@@ -12,6 +12,7 @@ for(let i = 0; i < str.length; i++){
   }
 }
 return result
+}
 
 
 // const totalScore = function (array) {
@@ -47,6 +48,7 @@ return result
 
 
 
+
 const findIndices = function(array,callback){
   //new array
   const newArr = [];
@@ -60,6 +62,15 @@ const findIndices = function(array,callback){
     }
   }
   return newArr
+}
+
+const Faqtory = function(){
+  return {
+    questions: [],
+    addQuestion(str, answered=false){
+     
+  }
+}
 }
 
 if (typeof makeRunOn === 'undefined') {
