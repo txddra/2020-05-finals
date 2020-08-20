@@ -78,7 +78,11 @@ const Faqtory = function () {
         answered: answered,
         id: this.questions.length
       })
+    },
+    answerQuestion(id, answer){
+      
     }
+
   }
 }
 
