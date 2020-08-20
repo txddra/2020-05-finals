@@ -55,19 +55,20 @@ const totalScore = function(scores){
 //   return result;
 // }
 
-const getToBed = function (people){
-  //new array
-  let nightPeople =[];
-  //loop through the array of people
-  for(person of people) {
-    //if the given person's local time is between 1 am awake/ 4am asleep
-    if(person.localTime >= 100 && person.localTime <= 400 && !person.asleep) {
+// const getToBed = function (people){
+//   //new array
+//   let nightPeople =[];
+//   //loop through the array of people
+//   for(person of people) {
+//     //if the given person's local time is between 1 am awake/ 4am asleep
+//     if(person.localTime >= 100 && person.localTime <= 400 && !person.asleep) {
       
-    }
-  }
+//     }
+//   }
 
-  return nightPeople;
-}
+//   return nightPeople;
+// }
+
 
 // const getToBed = function (array){
 //   let result = []
