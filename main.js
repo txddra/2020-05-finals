@@ -1,5 +1,5 @@
 const makeRunOn = function(str){
-  // new given str
+  // new str
   let result = '';
 // //loop through the given string
 for(let i = 0; i < str.length; i++){
@@ -12,19 +12,55 @@ for(let i = 0; i < str.length; i++){
   }
 }
 return result
+
+
+// const totalScore = function (array) {
+//   //new total
+//   let result = 0;
+//   //loop through given array
+//   for(let i = 0; i < array.length; i++) {
+//     //
+//     if (array[i].multiplier !== 1) {
+//       result += array[i];
+    
+//     } 
+//     // else if(array[i].multiplier){
+
+//}
+
+// const getToBed = function (array){
+//   let result = []
+//   result = array.slice()
+//     for(let i = 0; i < result.length; i++){
+  
+//       }
+//     }
+  
+//   return result
+//   }
+
+// const nightOwls = function(people){
+
+//   return people
+//}
+
+
+
+
+const findIndices = function(array,callback){
+  //new array
+  const newArr = [];
+//a holder for the map of the given array
+  let holder = array.map(callback)
+  //loop through the holder
+  for (let i = 0 ; i < holder.length ; i++){
+    if (holder[i]){
+      //push the indices into the new array if true
+      newArr.push(i)
+    }
+  }
+  return newArr
 }
-
-// const totalScore = function(score){
-//   return score + score
-
-// }
-
-
-
-
-
-
-
 
 if (typeof makeRunOn === 'undefined') {
   makeRunOn = undefined;
