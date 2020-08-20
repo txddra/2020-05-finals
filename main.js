@@ -14,23 +14,60 @@ const makeRunOn = function (str) {
   return result
 }
 
+const totalScore = function(scores){
+  // new total
+  let sum = 0
+  //loop through the array of scores
+  for (let i = 0; i < scores.length; i++){
+ //if multiplier is undefined
+    if (scores[i].multiplier === 1 || scores[i].multiplier === undefined){
+    sum = sum + scores[i].score
 
-const totalScore = function (array) {
-  //new total
-  let result = 0;
-  //loop through given array
-  for (let i = 0; i < array.length; i++) {
+  }// can't figure this one out
+  // else if (scores[i].multiplier !== 1){
+  //  sum = scores[i].multiplier* scores[i].score
+  // }
+  else if (scores[i].multiplier > 1)
+  {
+    sum = sum + (scores[i].score * scores[i].multiplier)
+  }
 
-    if (array[i].multiplier !== 1) {
-      result += array[i];
+}
+  return sum
+}
+  
+// }
+// const totalScore = function (array) {
+//   //new total
+//   let result = 0;
+//   //loop through given array
+//   for (let i = 0; i < array.length; i++) {
 
-    }
-    else if (array[i].multiplier) {
+//     if (array[i].multiplier !== 1) {
+//       result += array[i];
+
+//     }
+//     else if (array[i].multiplier) {
 
 
+//     }
+//   }
+//   return result;
+// }
+
+const getToBed = function (people){
+  //new array
+  let nightPeople =[];
+  //loop through the array of people
+  for(person of people) {
+    //if the given person's local time ia
+    if(person.localTime >= 100 && person.localTime <= 400 && !person.asleep) {
+      person.asleep = 1;
+      nightPeople.push(person);
     }
   }
-  
+
+  return nightPeople;
 }
 
 // const getToBed = function (array){
