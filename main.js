@@ -80,7 +80,11 @@ const Faqtory = function () {
       })
     },
     answerQuestion(id, answer){
-      
+      //if the question wasn't answered
+    if(this.questions[id].answered === false){
+//add the text to the answer of the question with id
+this.questions[id].answer =answer
+    }
     }
 
   }
