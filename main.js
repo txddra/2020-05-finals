@@ -62,10 +62,10 @@ const findIndices = function (array, callback) {
   for (let i = 0; i < holder.length; i++) {
     if (holder[i]) {
       //push the indices into the new array if true
-      newArr.push(i)
+      newArr.push(i); 
     }
   }
-  return newArr
+  return newArr;
 }
 
 const Faqtory = function () {
@@ -82,8 +82,9 @@ const Faqtory = function () {
     answerQuestion(id, answer){
       //if the question wasn't answered
     if(this.questions[id].answered === false){
-//add the text to the answer of the question with id
-this.questions[id].answer =answer
+//add the text to the answer of the question with
+this.questions[id].answer =answer;
+this.questions[id].answered = true;
     }
     }
 
