@@ -60,10 +60,9 @@ const getToBed = function (people){
   let nightPeople =[];
   //loop through the array of people
   for(person of people) {
-    //if the given person's local time ia
+    //if the given person's local time is between 1 am awake/ 4am asleep
     if(person.localTime >= 100 && person.localTime <= 400 && !person.asleep) {
-      person.asleep = 1;
-      nightPeople.push(person);
+      
     }
   }
 
